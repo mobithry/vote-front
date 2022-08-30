@@ -1,0 +1,69 @@
+.vote {
+  display: flex;
+  height: 97vh;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+
+  &-welcome {
+    color: #49c668;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    text-align: center;
+  }
+
+  &-remaning {
+    h2 {
+      text-align: center;
+    }
+    &__warpper {
+      font-size: 1.5rem;
+      direction: ltr;
+      display: flex;
+      justify-content: center;
+    }
+
+    &__countdown {
+      position: relative;
+      margin-right: 0.5em;
+      justify-content: center;
+      align-items: center;
+      display: flex;
+      flex-direction: column;
+
+      &:not(:last-child)::after {
+        content: ":";
+        top: 50%;
+        right: -0.3rem;
+        position: absolute;
+        transform: translate(100%, -80%);
+      }
+
+      :last-child {
+        font-size: 0.8rem;
+      }
+    }
+  }
+
+  &-candidates {
+    margin-top: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__person {
+      margin-left: 2rem;
+      flex-direction: column;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      img {
+        width: 5rem;
+        height: 5rem;
+        object-fit: cover;
+        object-position: center center;
+      }
+    }
+  }
+}

@@ -1,0 +1,14 @@
+@import "./font/Vazirmatn-FD-font-face.css";
+
+body {
+  direction: rtl;
+  font-family: Vazirmatn FD;
+  background-image: url("../assets/image/back.jpg");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+button {
+  font-family: Vazirmatn FD;
+}

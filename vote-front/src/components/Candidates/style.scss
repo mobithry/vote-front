@@ -1,0 +1,36 @@
+.candidates {
+  display: flex;
+  flex-direction: column;
+
+  &-card {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    background-color: transparent;
+    padding: 0.5rem 1rem;
+    border-radius: 16px;
+    box-shadow: 9px 10px 118px 8px rgba(199, 199, 199, 0.75);
+    -webkit-box-shadow: 9px 10px 118px 8px rgba(199, 199, 199, 0.75);
+    -moz-box-shadow: 9px 10px 118px 8px rgba(199, 199, 199, 0.75);
+    width: 20rem;
+    transition: 0.3s;
+
+    &:hover {
+      box-shadow: none;
+      -webkit-box-shadow: none;
+      -moz-box-shadow: none;
+    }
+
+    span {
+      font-weight: bold;
+    }
+
+    img {
+      margin-left: 1rem;
+      width: 5rem;
+      height: 5rem;
+      object-fit: cover;
+      object-position: center center;
+    }
+  }
+}
